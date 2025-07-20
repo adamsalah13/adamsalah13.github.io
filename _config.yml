@@ -2,10 +2,6 @@ title: "Adam Salah – Developer Blog"
 description: "Technical insights, tutorials, and projects"
 url: "https://teamworx365.com"
 baseurl: ""
-github_username: adamsalah13
-
-author:
-  name: "Adam Salah"
 
 markdown: kramdown
 highlighter: rouge
@@ -24,9 +20,18 @@ collections:
     permalink: /howtos/:name/
 
 defaults:
-  - scope: {path: "", type: "posts"}
-    values: {layout: post}
-  - scope: {path: "_articles", type: articles}
-    values: {layout: post}
-  - scope: {path: "_howtos", type: howtos}
-    values: {layout: post}
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "_articles"
+      type: "articles"
+    values:
+      layout: "post"
+  - scope:
+      path: "_howtos"
+      type: "howtos"
+    values:
+      layout: "post"
