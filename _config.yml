@@ -6,19 +6,10 @@ baseurl: ""
 markdown: kramdown
 highlighter: rouge
 
-safe: true
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - .git/
-  - .jekyll-cache/
-  - _site/
 
 collections:
   articles:
@@ -36,11 +27,11 @@ defaults:
       layout: "post"
   - scope:
       path: "_articles"
-      type: "articles"  
+      type: "articles"
     values:
       layout: "post"
   - scope:
-      path: "_howtos"
+      path: "_howtos" 
       type: "howtos"
     values:
       layout: "post"
