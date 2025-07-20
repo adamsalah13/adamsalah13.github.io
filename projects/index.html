@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Adam Salah</title>
+    <meta name="description" content="Project showcases and demos">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="/" class="site-title">Adam Salah</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="/articles/" class="nav-link">Articles</a>
+                <a href="/howtos/" class="nav-link">How-tos</a>
+                <a href="/projects/" class="nav-link active">Projects</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="content-section">
+            <h1>🚀 Projects</h1>
+            <p class="section-description">Showcasing my development projects and experiments</p>
+            
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>Personal Website</h3>
+                    <p class="content-date">2025</p>
+                    <p>This very website! Built with pure HTML, CSS, and JavaScript. Deployed on GitHub Pages with a custom domain.</p>
+                    <div class="content-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">GitHub Pages</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/adamsalah13/adamsalah13.github.io" target="_blank" rel="noopener noreferrer">View Code</a>
+                    </div>
+                </article>
+                
+                <article class="content-card">
+                    <h3>More Projects Coming</h3>
+                    <p class="content-date">Stay Tuned</p>
+                    <p>I'll be showcasing web applications, automation tools, and other development projects here.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Adam Salah. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/adamsalah13" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

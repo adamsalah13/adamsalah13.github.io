@@ -1,0 +1,39 @@
+---
+layout: default
+title: How-to Guides
+---
+
+<section class="content-section">
+    <h1>🛠️ How-to Guides</h1>
+    <p class="section-description">Step-by-step tutorials and practical guides</p>
+    
+    <div class="content-grid">
+        {% for howto in site.howtos %}
+            <article class="content-card">
+                <h3><a href="{{ howto.url | relative_url }}">{{ howto.title }}</a></h3>
+                <p class="content-date">{{ howto.date | date: "%B %d, %Y" }}</p>
+                <p>{{ howto.excerpt | strip_html | truncatewords: 30 }}</p>
+                {% if howto.tags %}
+                    <div class="content-tags">
+                        {% for tag in howto.tags %}
+                            <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% if howto.difficulty %}
+                    <p class="content-meta">
+                        <strong>Difficulty:</strong> {{ howto.difficulty | capitalize }}
+                        {% if howto.estimated_time %}
+                            | <strong>Time:</strong> {{ howto.estimated_time }}
+                        {% endif %}
+                    </p>
+                {% endif %}
+            </article>
+        {% empty %}
+            <div class="content-card">
+                <h3>Coming Soon!</h3>
+                <p>Step-by-step guides and tutorials will be published here.</p>
+            </div>
+        {% endfor %}
+    </div>
+</section>
