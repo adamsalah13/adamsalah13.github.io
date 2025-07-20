@@ -1,0 +1,19 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Adam Salah</h1>
+<p>Full-Stack Developer & Technical Writer</p>
+
+<h2>Recent Posts</h2>
+{% for post in site.posts limit:5 %}
+<article>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p>{{ post.date | date: "%B %d, %Y" }}</p>
+  <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+</article>
+{% endfor %}
+
+<h2>About</h2>
+<p>Welcome to my technical blog. Here you'll find posts about software development, tutorials, and technology insights.</p>

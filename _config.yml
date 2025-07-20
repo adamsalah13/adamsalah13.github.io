@@ -5,33 +5,20 @@ baseurl: ""
 
 author:
   name: "Adam Salah"
+  email: "adam@teamworx365.com"
 github_username: adamsalah13
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:year/:month/:day/:title/
+permalink: pretty
 
-# Collections for dynamic content
-collections:
-  articles:
-    output: true
-    permalink: /articles/:name/
-  howtos:
-    output: true
-    permalink: /howtos/:name/
-
-# Plugins (GitHub Pages compatible)
+# Plugins (GitHub Pages whitelist only)
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
 
-# Exclude files
+# Exclude files from processing
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
