@@ -1,0 +1,32 @@
+title: "Adam Salah – Developer Blog"
+description: "Technical insights, tutorials, and projects"
+url: "https://teamworx365.com"
+baseurl: ""
+github_username: adamsalah13
+
+author:
+  name: "Adam Salah"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name/
+  howtos:
+    output: true
+    permalink: /howtos/:name/
+
+defaults:
+  - scope: {path: "", type: "posts"}
+    values: {layout: post}
+  - scope: {path: "_articles", type: articles}
+    values: {layout: post}
+  - scope: {path: "_howtos", type: howtos}
+    values: {layout: post}
