@@ -1,11 +1,23 @@
-title: "Adam Salah Developer Blog"
-description: "Technical insights, tutorials, and projects"
+title: "Adam Salah"
+description: "Full-Stack Developer & Technical Writer"
 url: "https://teamworx365.com"
 baseurl: ""
+
+author:
+  name: "Adam Salah"
+github_username: adamsalah13
 
 # Use supported GitHub Pages theme
 theme: minima
 
-# Minimal plugins
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
 plugins:
   - jekyll-feed
+
+# Page paths for navigation
+header_pages:
+  - about.md
