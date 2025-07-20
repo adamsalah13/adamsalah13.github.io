@@ -1,0 +1,135 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient backgrounds -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#161b22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#21262d;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f78166;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#fd7e14;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffc107;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#30363d" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Main content area -->
+  <g transform="translate(120, 0)">
+    
+    <!-- GitHub icon -->
+    <g transform="translate(100, 200)">
+      <circle cx="60" cy="60" r="50" fill="#58a6ff" opacity="0.2"/>
+      <path d="M60 20 C75.464 20 88.642 26.536 96.799 36.799 C105.464 25.536 119.642 20 136 20 C159.748 20 179.2 39.452 179.2 63.2 C179.2 76.189 173.6 87.8 164.8 96 L96 164.8 C94.4 166.4 91.6 166.4 90 164.8 L21.2 96 C12.4 87.8 6.8 76.189 6.8 63.2 C6.8 39.452 26.252 20 50 20 C66.358 20 80.536 25.536 89.201 36.799 C97.358 26.536 110.536 20 126 20 Z" transform="scale(0.5) translate(60, 60)" fill="#58a6ff"/>
+      <circle cx="60" cy="60" r="35" fill="none" stroke="#58a6ff" stroke-width="2"/>
+      <!-- GitHub icon simplified -->
+      <path d="M60 30 C71.046 30 80 38.954 80 50 C80 59.464 74.207 67.683 66 70.5 V85 C66 88.314 63.314 91 60 91 C56.686 91 54 88.314 54 85 V70.5 C45.793 67.683 40 59.464 40 50 C40 38.954 48.954 30 60 30 Z M52 50 C52 55.523 56.477 60 62 60 C67.523 60 72 55.523 72 50 C72 44.477 67.523 40 62 40 C56.477 40 52 44.477 52 50 Z" fill="#58a6ff"/>
+    </g>
+    
+    <!-- Arrow pointing right -->
+    <g transform="translate(300, 240)">
+      <path d="M0 20 L40 20 L35 15 M40 20 L35 25" fill="none" stroke="url(#accentGradient)" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Document/Blog icon -->
+    <g transform="translate(420, 200)">
+      <rect x="20" y="20" width="80" height="100" rx="8" fill="#7c3aed" opacity="0.2"/>
+      <rect x="20" y="20" width="80" height="100" rx="8" fill="none" stroke="#7c3aed" stroke-width="2"/>
+      <rect x="30" y="35" width="60" height="4" fill="#7c3aed"/>
+      <rect x="30" y="50" width="45" height="3" fill="#7c3aed" opacity="0.7"/>
+      <rect x="30" y="60" width="50" height="3" fill="#7c3aed" opacity="0.7"/>
+      <rect x="30" y="70" width="40" height="3" fill="#7c3aed" opacity="0.7"/>
+      <rect x="30" y="80" width="55" height="3" fill="#7c3aed" opacity="0.7"/>
+      <rect x="30" y="90" width="35" height="3" fill="#7c3aed" opacity="0.7"/>
+      <circle cx="85" cy="110" r="8" fill="#10b981"/>
+      <path d="M80 110 L83 113 L90 106" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Main title -->
+    <g transform="translate(200, 400)">
+      <text x="0" y="0" font-family="'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="72" font-weight="700" fill="white">
+        GitHub as a
+      </text>
+      <text x="0" y="90" font-family="'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="72" font-weight="700" fill="url(#accentGradient)">
+        Document Management
+      </text>
+      <text x="0" y="180" font-family="'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="72" font-weight="700" fill="white">
+        &amp; Blogging Platform
+      </text>
+    </g>
+    
+    <!-- Subtitle -->
+    <g transform="translate(200, 640)">
+      <text x="0" y="0" font-family="'SF Pro Text', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="32" font-weight="400" fill="#8b949e">
+        Real-world experience building a production Jekyll site
+      </text>
+      <text x="0" y="50" font-family="'SF Pro Text', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="400" fill="#58a6ff">
+        Lessons learned • Best practices • Performance insights
+      </text>
+    </g>
+    
+    <!-- Tech stack icons -->
+    <g transform="translate(200, 750)">
+      <!-- Jekyll -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="80" height="40" rx="20" fill="#cc0000" opacity="0.2"/>
+        <text x="40" y="28" font-family="monospace" font-size="16" font-weight="600" fill="#cc0000" text-anchor="middle">Jekyll</text>
+      </g>
+      
+      <!-- GitHub Pages -->
+      <g transform="translate(100, 0)">
+        <rect x="0" y="0" width="120" height="40" rx="20" fill="#58a6ff" opacity="0.2"/>
+        <text x="60" y="28" font-family="monospace" font-size="16" font-weight="600" fill="#58a6ff" text-anchor="middle">GitHub Pages</text>
+      </g>
+      
+      <!-- Markdown -->
+      <g transform="translate(240, 0)">
+        <rect x="0" y="0" width="100" height="40" rx="20" fill="#7c3aed" opacity="0.2"/>
+        <text x="50" y="28" font-family="monospace" font-size="16" font-weight="600" fill="#7c3aed" text-anchor="middle">Markdown</text>
+      </g>
+      
+      <!-- Git -->
+      <g transform="translate(360, 0)">
+        <rect x="0" y="0" width="60" height="40" rx="20" fill="#f78166" opacity="0.2"/>
+        <text x="30" y="28" font-family="monospace" font-size="16" font-weight="600" fill="#f78166" text-anchor="middle">Git</text>
+      </g>
+    </g>
+    
+    <!-- Author info -->
+    <g transform="translate(200, 850)">
+      <text x="0" y="0" font-family="'SF Pro Text', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="500" fill="#f0f6fc">
+        by Adam Salah
+      </text>
+      <text x="0" y="35" font-family="'SF Pro Text', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="400" fill="#8b949e">
+        teamworx365.com • @adamsalah13
+      </text>
+    </g>
+    
+  </g>
+  
+  <!-- Decorative elements -->
+  <!-- Code brackets -->
+  <g transform="translate(1400, 200)" opacity="0.1">
+    <path d="M40 50 L20 50 L20 150 L40 150" fill="none" stroke="#58a6ff" stroke-width="4"/>
+    <path d="M60 50 L80 50 L80 150 L60 150" fill="none" stroke="#58a6ff" stroke-width="4"/>
+  </g>
+  
+  <!-- Floating dots -->
+  <circle cx="1600" cy="300" r="4" fill="#f78166" opacity="0.6"/>
+  <circle cx="1650" cy="280" r="6" fill="#58a6ff" opacity="0.4"/>
+  <circle cx="1620" cy="350" r="3" fill="#7c3aed" opacity="0.7"/>
+  <circle cx="1680" cy="320" r="5" fill="#10b981" opacity="0.5"/>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="1070" width="1920" height="10" fill="url(#accentGradient)"/>
+  
+</svg>
