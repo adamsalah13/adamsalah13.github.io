@@ -1,16 +1,12 @@
-title: "Adam Salah – Developer Blog"
+title: "Adam Salah Developer Blog"
 description: "Technical insights, tutorials, and projects"
 url: "https://teamworx365.com"
 baseurl: ""
 encoding: UTF-8
-author:
-  name: "Adam Salah"
-github_username: adamsalah13
 
 markdown: kramdown
 highlighter: rouge
 
-# Only GitHub Pages compatible plugins
 plugins:
   - jekyll-feed
 
@@ -21,20 +17,3 @@ collections:
   howtos:
     output: true
     permalink: /howtos/:name/
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: "_articles"
-      type: "articles"
-    values:
-      layout: "post"
-  - scope:
-      path: "_howtos" 
-      type: "howtos"
-    values:
-      layout: "post"
