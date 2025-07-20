@@ -1,0 +1,157 @@
+---
+---
+
+// Import the base Minima theme
+@import "minima";
+
+// Custom variables
+:root {
+  --primary: #2c3e50;
+  --accent: #3498db;
+  --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --card-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  --border-radius: 12px;
+}
+
+// Override site header
+.site-header {
+  background: var(--gradient) !important;
+  border: none !important;
+  padding: 1rem 0 !important;
+  box-shadow: var(--card-shadow) !important;
+}
+
+.site-title {
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  
+  &:hover {
+    color: rgba(255,255,255,0.9) !important;
+  }
+}
+
+.site-nav .page-link {
+  color: rgba(255,255,255,0.9) !important;
+  font-weight: 500 !important;
+  
+  &:hover {
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
+
+// Main content styling
+.wrapper {
+  max-width: 1100px !important;
+}
+
+.page-content {
+  padding-top: 2rem !important;
+}
+
+// Post list styling
+.post-list {
+  .post-link {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    color: var(--primary) !important;
+  }
+  
+  .post-meta {
+    color: #666 !important;
+    font-size: 0.9rem !important;
+  }
+  
+  li {
+    background: white !important;
+    border-radius: var(--border-radius) !important;
+    box-shadow: var(--card-shadow) !important;
+    margin-bottom: 1.5rem !important;
+    padding: 1.5rem !important;
+    border: 1px solid #f1f1f1 !important;
+    transition: transform 0.2s ease !important;
+    
+    &:hover {
+      transform: translateY(-2px) !important;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+    }
+  }
+}
+
+// Homepage content
+.home {
+  h1 {
+    color: var(--primary) !important;
+    font-size: 2.5rem !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+  
+  h2, h3 {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+  }
+}
+
+// Post content styling
+.post-header {
+  .post-title {
+    color: var(--primary) !important;
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .post-meta {
+    color: #666 !important;
+    border-bottom: 2px solid var(--accent) !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+  }
+  
+  code {
+    background: #f8f9fa !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 4px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  pre {
+    background: #f8f9fa !important;
+    border-radius: var(--border-radius) !important;
+    padding: 1.5rem !important;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1) !important;
+  }
+}
+
+// Body styling
+body {
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef) !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+// Site footer
+.site-footer {
+  background: var(--primary) !important;
+  color: white !important;
+  
+  .footer-heading {
+    color: white !important;
+  }
+  
+  a {
+    color: rgba(255,255,255,0.9) !important;
+    
+    &:hover {
+      color: white !important;
+    }
+  }
+}
