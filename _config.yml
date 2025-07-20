@@ -8,6 +8,15 @@ author:
   email: "adam@teamworx365.com"
 github_username: adamsalah13
 
+# Collections for automatic content discovery
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name/
+  howtos:
+    output: true
+    permalink: /howtos/:name/
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

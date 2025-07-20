@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 
 <div class="hero-section">
@@ -10,12 +11,10 @@ layout: default
   </div>
 </div>
 
-<section class="content-section">
+<div class="content-section">
   <div class="container">
-    
     <div class="content-grid">
       
-      <!-- Recent Blog Posts -->
       <div class="content-block">
         <h2>📝 Recent Posts</h2>
         {% for post in site.posts limit:3 %}
@@ -27,10 +26,9 @@ layout: default
         {% else %}
           <p>No posts yet. Coming soon!</p>
         {% endfor %}
-        <a href="/blog/" class="view-all">View all posts →</a>
+        <a href="/blog/" class="view-all-link">View all posts →</a>
       </div>
 
-      <!-- Technical Articles -->
       <div class="content-block">
         <h2>📚 Technical Articles</h2>
         {% for article in site.articles limit:3 %}
@@ -42,10 +40,9 @@ layout: default
         {% else %}
           <p>No articles yet. Coming soon!</p>
         {% endfor %}
-        <a href="/articles/" class="view-all">View all articles →</a>
+        <a href="/articles/" class="view-all-link">View all articles →</a>
       </div>
 
-      <!-- How-to Guides -->
       <div class="content-block">
         <h2>🛠️ How-to Guides</h2>
         {% for howto in site.howtos limit:3 %}
@@ -58,28 +55,13 @@ layout: default
         {% else %}
           <p>No guides yet. Coming soon!</p>
         {% endfor %}
-        <a href="/howtos/" class="view-all">View all guides →</a>
-      </div>
-
-      <!-- Projects -->
-      <div class="content-block">
-        <h2>🚀 Projects</h2>
-        <article class="content-item">
-          <h3>Personal Website & Blog</h3>
-          <p>This Jekyll-powered site with automatic Markdown processing, collections, and GitHub Pages deployment.</p>
-        </article>
-        <article class="content-item">
-          <h3>Development Tools</h3>
-          <p>Various scripts and utilities for streamlining development workflows.</p>
-        </article>
-        <a href="/projects/" class="view-all">View all projects →</a>
+        <a href="/howtos/" class="view-all-link">View all guides →</a>
       </div>
 
     </div>
-
-    <!-- Content Stats -->
+    
     <div class="stats-section">
-      <h2>Content Library</h2>
+      <h2>📊 Content Statistics</h2>
       <div class="stats-grid">
         <div class="stat-item">
           <span class="stat-number">{{ site.posts | size }}</span>
@@ -95,6 +77,6 @@ layout: default
         </div>
       </div>
     </div>
-
+    
   </div>
-</section>
+</div>

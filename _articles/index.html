@@ -1,0 +1,22 @@
+---
+layout: default
+title: Articles
+---
+
+<div class="page-header">
+  <h1>📚 Technical Articles</h1>
+  <p>In-depth technical content and insights</p>
+</div>
+
+<div class="posts-grid">
+  {% for article in site.articles %}
+    <article class="post-card">
+      <h2><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h2>
+      {% if article.date %}<p class="meta">{{ article.date | date: "%B %d, %Y" }}</p>{% endif %}
+      {% if article.tags %}<div class="tags">{% for tag in article.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
+      <p>{{ article.excerpt | strip_html | truncatewords: 30 }}</p>
+    </article>
+  {% else %}
+    <p>No articles yet. Coming soon!</p>
+  {% endfor %}
+</div>

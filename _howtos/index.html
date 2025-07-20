@@ -1,0 +1,23 @@
+---
+layout: default
+title: How-to Guides
+---
+
+<div class="page-header">
+  <h1>🛠️ How-to Guides</h1>
+  <p>Step-by-step guides and tutorials</p>
+</div>
+
+<div class="posts-grid">
+  {% for howto in site.howtos %}
+    <article class="post-card">
+      <h2><a href="{{ howto.url | relative_url }}">{{ howto.title }}</a></h2>
+      {% if howto.date %}<p class="meta">{{ howto.date | date: "%B %d, %Y" }}</p>{% endif %}
+      {% if howto.difficulty %}<span class="difficulty">{{ howto.difficulty }}</span>{% endif %}
+      {% if howto.tags %}<div class="tags">{% for tag in howto.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
+      <p>{{ howto.excerpt | strip_html | truncatewords: 30 }}</p>
+    </article>
+  {% else %}
+    <p>No guides yet. Coming soon!</p>
+  {% endfor %}
+</div>

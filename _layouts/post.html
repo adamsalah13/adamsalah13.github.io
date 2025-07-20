@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% endif %}
+      {% if page.author %}
+        • by {{ page.author }}
+      {% endif %}
+      {% if page.estimated_reading_time %}
+        • {{ page.estimated_reading_time }} read
+      {% endif %}
+      {% if page.difficulty %}
+        • <span class="difficulty">{{ page.difficulty }}</span>
+      {% endif %}
+    </div>
+    {% if page.excerpt %}
+      <div class="post-excerpt">{{ page.excerpt }}</div>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.tags and page.tags.size > 0 %}
+    <footer class="post-footer">
+      <div class="post-tags">
+        <strong>Tags:</strong>
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+    </footer>
+  {% endif %}
+</article>
