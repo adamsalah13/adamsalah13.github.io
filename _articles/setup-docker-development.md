@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to Set Up Docker for Development"
+date: 2025-07-20
 category: "tutorial"
 tags: [docker, development, devops]
 difficulty: "beginner"
@@ -12,7 +13,7 @@ requirements:
 tools_needed:
   - "Docker Desktop"
   - "Text editor"
-author: "Your Name"
+author: "Adam Salah"
 date: 2025-01-20
 excerpt: "Step-by-step guide to setting up Docker for local development."
 ---
