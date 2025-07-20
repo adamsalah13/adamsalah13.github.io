@@ -9,31 +9,6 @@ github_username: adamsalah13
 markdown: kramdown
 highlighter: rouge
 
-# Only use GitHub Pages compatible plugins
+# Minimal config for GitHub Pages
 plugins:
   - jekyll-feed
-
-collections:
-  articles:
-    output: true
-    permalink: /articles/:name/
-  howtos:
-    output: true
-    permalink: /howtos/:name/
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: "_articles"
-      type: "articles"
-    values:
-      layout: "post"
-  - scope:
-      path: "_howtos" 
-      type: "howtos"
-    values:
-      layout: "post"

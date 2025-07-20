@@ -26,27 +26,13 @@ title: Home
 
         <div class="preview-card">
             <h3>📚 Recent Articles</h3>
-            {% for article in site.articles limit:3 %}
-                <div class="preview-item">
-                    <h4><a href="{{ article.url | relative_url }}">{{ article.title }}</a></h4>
-                    <p class="preview-excerpt">{{ article.excerpt | strip_html | truncatewords: 20 }}</p>
-                </div>
-            {% empty %}
-                <p>No articles yet. Coming soon!</p>
-            {% endfor %}
+            <p>Technical articles and tutorials coming soon!</p>
             <a href="{{ '/articles/' | relative_url }}" class="view-all">View all articles →</a>
         </div>
 
         <div class="preview-card">
             <h3>🛠️ How-to Guides</h3>
-            {% for howto in site.howtos limit:3 %}
-                <div class="preview-item">
-                    <h4><a href="{{ howto.url | relative_url }}">{{ howto.title }}</a></h4>
-                    <p class="preview-excerpt">{{ howto.excerpt | strip_html | truncatewords: 20 }}</p>
-                </div>
-            {% empty %}
-                <p>No guides yet. Stay tuned!</p>
-            {% endfor %}
+            <p>Step-by-step guides and tutorials coming soon!</p>
             <a href="{{ '/howtos/' | relative_url }}" class="view-all">View all guides →</a>
         </div>
 
