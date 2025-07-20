@@ -3,8 +3,9 @@ description: "Technical insights, tutorials, and projects"
 url: "https://teamworx365.com"
 baseurl: ""
 
-markdown: kramdown
-highlighter: rouge
+# Use supported GitHub Pages theme
+theme: minima
 
+# Minimal plugins
 plugins:
   - jekyll-feed
