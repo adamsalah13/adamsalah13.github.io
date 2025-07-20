@@ -7,6 +7,11 @@ author:
   name: "Adam Salah"
 github_username: adamsalah13
 
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
 # Collections for dynamic content
 collections:
   articles:
@@ -16,17 +21,17 @@ collections:
     output: true
     permalink: /howtos/:name/
 
-# Use supported GitHub Pages theme
-theme: minima
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
-# Plugins
+# Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
-# Page paths for navigation
-header_pages:
-  - about.md
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

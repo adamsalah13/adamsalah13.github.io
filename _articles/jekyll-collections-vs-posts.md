@@ -152,24 +152,24 @@ This project involved building a scalable e-commerce platform...
 ### Querying Collections
 
 ```liquid
-{% assign featured_projects = site.projects | where: "featured", true %}
-{% for project in featured_projects %}
-  <!-- Display featured projects -->
+{% assign featured_articles = site.articles | where: "featured", true %}
+{% for article in featured_articles %}
+  <!-- Display featured articles -->
 {% endfor %}
 ```
 
 ### Cross-referencing Content
 
 ```liquid
-<!-- In a blog post, reference related tutorials -->
-{% assign related = site.tutorials | where: "tags", page.primary_tag %}
+<!-- In a blog post, reference related how-tos -->
+{% assign related = site.howtos | where: "tags", page.primary_tag %}
 ```
 
 ### Custom Sorting
 
 ```liquid
-{% assign projects = site.projects | sort: "date" | reverse %}
-{% assign tutorials = site.tutorials | sort: "difficulty" %}
+{% assign articles = site.articles | sort: "date" | reverse %}
+{% assign howtos = site.howtos | sort: "title" %}
 ```
 
 ## Best Practices
