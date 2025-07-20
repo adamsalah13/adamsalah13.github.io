@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Set Up a Development Environment"
-date: 2025-07-20
+date: 2025-07-20 12:00:00
 categories: [tutorial, setup]
 tags: [development, setup, beginners, tools]
 difficulty: "beginner"

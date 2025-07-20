@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Set Up Docker for Development"
-date: 2025-07-20
+date: 2025-07-20 12:00:00
 category: "tutorial"
 tags: [docker, development, devops]
 difficulty: "beginner"

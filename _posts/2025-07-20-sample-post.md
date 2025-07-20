@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to My New Jekyll Blog"
-date: 2025-07-20
+date: 2025-07-20 12:00:00
 categories: [blog, announcement]
 tags: [jekyll, github-pages, blogging, web-development]
 author: "Adam Salah"
