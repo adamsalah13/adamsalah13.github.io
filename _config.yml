@@ -7,6 +7,15 @@ author:
   name: "Adam Salah"
 github_username: adamsalah13
 
+# Collections for dynamic content
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name/
+  howtos:
+    output: true
+    permalink: /howtos/:name/
+
 # Use supported GitHub Pages theme
 theme: minima
 

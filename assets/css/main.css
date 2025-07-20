@@ -180,6 +180,77 @@ a:hover{text-decoration:underline}
     border-radius: 4px;
 }
 
+/* Additional Content Item Styles */
+.content-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.content-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.content-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.content-item h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0.75rem 0;
+}
+
+.category, .difficulty, .time {
+    background: var(--accent);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+
+.difficulty {
+    background: #f39c12;
+}
+
+.time {
+    background: #27ae60;
+}
+
+.tags {
+    margin-top: 1rem;
+}
+
+.tag {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    border: 1px solid var(--border);
+}
+
 @media (max-width: 768px) {
     .content-section {
         padding: 1rem;
