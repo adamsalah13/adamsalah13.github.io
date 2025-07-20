@@ -1,0 +1,17 @@
+# GitHub Pages Deployment Commands
+# Run these commands in PowerShell from the project directory
+
+# Set up remote repository
+git remote add origin https://github.com/adamsalah13/adamsalah13.github.io.git
+
+# Create main branch (GitHub Pages default)
+git branch -M main
+
+# Push to GitHub (this will overwrite existing content)
+git push -u origin main --force
+
+# After successful push, GitHub Pages will automatically build and deploy
+# Your site will be available at: https://teamworx365.com
+# GitHub Pages build usually takes 2-5 minutes
+
+# Check build status at: https://github.com/adamsalah13/adamsalah13.github.io/actions
