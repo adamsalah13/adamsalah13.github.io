@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <style>
+        body { background: white; color: #333; font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .site-main { min-height: 400px; }
+        h1 { color: #2c3e50; }
+        .hero-section { text-align: center; margin: 40px 0; }
+        .preview-section { margin: 40px 0; }
+        .preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .preview-card { background: #f8f9fa; padding: 20px; border-radius: 8px; }
+    </style>
 </head>
 <body>
     <header class="site-header">
