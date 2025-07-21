@@ -14,10 +14,11 @@ A modern, responsive Jekyll blog hosted on GitHub Pages featuring automatic cont
 - **Automatic Content Discovery**: New markdown files are automatically detected and displayed
 - **Multiple Content Types**: Organized into Blog Posts, Technical Articles, and How-to Guides
 - **Responsive Design**: Professional, mobile-first design with modern CSS Grid/Flexbox
-- **SEO Optimized**: Jekyll SEO tag integration with proper metadata
+- **Personal Branding**: Integrated headshot and favicon for professional appearance
+- **Advanced Search**: Real-time content search across all collections
 - **GitHub Pages Ready**: Zero-config deployment with GitHub Pages
 - **Collection-Based Architecture**: Organized content structure using Jekyll collections
-- **Fast Loading**: Optimized static site generation
+- **Fast Loading**: Optimized static site generation with single CSS file
 - **Clean URLs**: Semantic permalink structure
 
 ## 📁 Content Structure
@@ -45,11 +46,11 @@ Quick, practical step-by-step instructions for common tasks.
 - **Static Site Generator**: Jekyll 4.3.0
 - **Hosting**: GitHub Pages
 - **Language**: Ruby 3.4.0
-- **Styling**: Custom CSS with Grid/Flexbox
+- **Styling**: Single comprehensive CSS file with Grid/Flexbox
+- **Search**: Real-time JavaScript content search
 - **Markup**: Markdown with Kramdown
 - **Syntax Highlighting**: Rouge
 - **Feed Generation**: Jekyll Feed plugin
-- **SEO**: Jekyll SEO Tag plugin
 
 ## 🏗️ Project Structure
 
@@ -58,11 +59,15 @@ Quick, practical step-by-step instructions for common tasks.
 ├── _howtos/             # How-to guides collection  
 ├── _posts/              # Blog posts collection
 ├── _layouts/            # Jekyll layout templates
-│   ├── default.html     # Main site layout
+│   ├── default.html     # Main site layout with headshot & search
 │   └── post.html        # Individual post layout
 ├── assets/
-│   └── css/
-│       └── main.css     # Custom stylesheet
+│   ├── css/
+│   │   └── main.css     # Single comprehensive stylesheet
+│   └── images/          # Site images (headshot, favicon)
+│       ├── IMAGE_SETUP.md  # Instructions for adding images
+│       ├── AS_headshot.JPG # Personal headshot (user-provided)
+│       └── twxlogo.ico     # Site favicon (user-provided)
 ├── _config.yml          # Jekyll configuration
 ├── index.html           # Homepage template
 ├── about.md             # About page
@@ -178,13 +183,20 @@ plugins:
 ## 🎨 Customization
 
 ### Styling
-- Main stylesheet: `assets/css/main.css`
+- Main stylesheet: `assets/css/main.css` (single comprehensive CSS file)
 - Responsive design with CSS Grid and Flexbox
-- Custom color scheme and typography
-- Mobile-first approach
+- Custom color scheme and professional typography
+- Mobile-first approach with tablet and desktop breakpoints
+- Integrated search functionality styling
+
+### Personal Branding
+- **Headshot**: Add `AS_headshot.JPG` to `assets/images/` for header display
+- **Favicon**: Add `twxlogo.ico` to `assets/images/` for browser tab icon
+- **Responsive sizing**: Headshot automatically scales (50px desktop, 45px tablet, 40px mobile)
+- **Hover effects**: Subtle animations for enhanced user experience
 
 ### Layout Templates
-- `_layouts/default.html`: Main site template with navigation
+- `_layouts/default.html`: Main site template with navigation, search, and branding
 - `_layouts/post.html`: Individual content item template
 
 ### Navigation
@@ -194,14 +206,16 @@ Navigation is automatically generated in the default layout and includes:
 - Articles  
 - How-tos
 - About
+- **Real-time Search**: Integrated search functionality for all content
 
-## 📈 SEO & Performance
+## 📈 Performance & User Experience
 
-- **SEO Tags**: Automatic meta tags, Open Graph, and Twitter Cards
-- **XML Sitemap**: Auto-generated sitemap for search engines
-- **RSS Feed**: Available at `/feed.xml`
-- **Fast Loading**: Optimized static files and minimal dependencies
-- **Mobile Responsive**: Mobile-first design approach
+- **Single CSS File**: Optimized with one comprehensive stylesheet for faster loading
+- **Real-time Search**: Instant content search across all collections and posts
+- **Personal Branding**: Professional headshot and favicon integration
+- **Fast Loading**: Optimized static files with minimal dependencies
+- **Mobile Responsive**: Mobile-first design with smooth responsive breakpoints
+- **Accessibility**: Semantic HTML with proper ARIA labels and focus management
 
 ## 🚀 Deployment
 
@@ -209,6 +223,12 @@ Navigation is automatically generated in the default layout and includes:
 1. Push changes to the `main` branch
 2. GitHub Pages automatically builds and deploys
 3. Site is available at your custom domain
+
+### Adding Your Images
+Before deployment, add your personal branding images:
+1. Add `AS_headshot.JPG` to `assets/images/` directory
+2. Add `twxlogo.ico` to `assets/images/` directory
+3. See `assets/images/IMAGE_SETUP.md` for detailed specifications
 
 ### Manual Deployment
 ```bash
@@ -219,17 +239,7 @@ bundle exec jekyll build
 # Upload contents to your hosting provider
 ```
 
-## 🔍 SEO Features
-
-- Semantic HTML structure
-- Proper heading hierarchy (H1-H6)
-- Meta descriptions and keywords
-- Open Graph and Twitter Card support
-- XML sitemap generation
-- Robots.txt optimization
-- Canonical URLs
-
-## 📊 Analytics & Monitoring
+##  Analytics & Monitoring
 
 To add Google Analytics, add your tracking ID to `_config.yml`:
 

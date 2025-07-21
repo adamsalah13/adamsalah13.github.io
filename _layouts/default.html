@@ -6,13 +6,20 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/twxlogo.ico' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/twxlogo.ico' | relative_url }}">
 </head>
 <body>
     <header class="site-header">
         <div class="container">
             <!-- Top navigation bar -->
             <nav class="main-nav">
-                <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+                <div class="site-brand">
+                    <img src="{{ '/assets/images/AS_headshot.JPG' | relative_url }}" alt="{{ site.author.name }}" class="site-headshot">
+                    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+                </div>
                 <div class="nav-links">
                     <a class="page-link" href="{{ '/' | relative_url }}">Home</a>
                     <a class="page-link" href="{{ '/blog/' | relative_url }}">Blog</a>
