@@ -1,18 +1,24 @@
 ---
 layout: post
-title: "GitHub as a Document Management and Blogging Platform: Lessons from Building a Production Jekyll Site"
-date: 2025-07-20
-category: "Technical"
-difficulty: "Intermediate"
-tags: [github, jekyll, blogging, documentation, git, static-sites]
-excerpt: "A deep dive into using GitHub as both a document management system and blogging platform, including real-world challenges, solutions, and best practices learned from building a production Jekyll site."
+title: "GitHub as a CMS: My Real-World Experience"
+date: 2025-07-19
+categories: [blogging, technology]
+tags: [github, cms, jekyll, static-sites, experience-report]
+author: "Adam Salah"
+excerpt: "Can GitHub really replace a traditional CMS? After 6 months of using GitHub + Jekyll for content management, here's what I learned about the good, the bad, and the surprising."
 ---
 
-![GitHub as a Document Management and Blogging Platform](../github-blogging-banner.svg)
+# GitHub as a CMS: My Real-World Experience
 
-# GitHub as a Document Management and Blogging Platform: Real-World Experience
+**Can GitHub really replace a traditional CMS?** After 6 months of using GitHub + Jekyll for all my content management, I have some thoughts (and battle scars) to share.
 
-After spending countless hours wrestling with complex content management systems, database configurations, and server maintenance, I decided to take a radically different approach: **using GitHub as both my document management system and blogging platform**. This article chronicles the journey, challenges, and surprising benefits of this approach.
+## The Unconventional Choice
+
+Let me start with why I even considered this. After dealing with WordPress for years - the constant updates, security patches, database issues, and $200/month hosting bills - I was ready for something different.
+
+When I saw how elegantly projects like React and Vue handle their documentation using static sites, I wondered: *Could this work for regular blogging and content management too?*
+
+**Spoiler alert**: It absolutely can, but there are some things I wish I'd known starting out.
 
 ## Why GitHub for Content Management?
 

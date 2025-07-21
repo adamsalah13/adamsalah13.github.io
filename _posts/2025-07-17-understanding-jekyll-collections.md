@@ -1,17 +1,16 @@
 ---
 layout: post
-title: "Understanding Jekyll Collections vs Posts"
-date: 2025-07-20
-categories: [technical, jekyll]
-tags: [jekyll, collections, posts, static-sites, web-development]
-difficulty: "intermediate"
-estimated_reading_time: "12 minutes"
+title: "Understanding Jekyll Collections: When Posts Aren't Enough"
+date: 2025-07-17
+categories: [web-development, jekyll]
+tags: [jekyll, collections, static-sites, organization, blogging]
 author: "Adam Salah"
-toc: true
-excerpt: "A deep dive into Jekyll's collections feature and how it differs from traditional posts, with practical examples and best practices."
+excerpt: "Jekyll posts work great for chronological content, but what about organizing tutorials, documentation, or project showcases? Here's when and how to use Jekyll collections effectively."
 ---
 
-Jekyll offers two main ways to organize content: Posts and Collections. Understanding when and how to use each is crucial for building well-structured static sites.
+If you've been using Jekyll for a while, you've probably run into this problem: **not everything fits neatly into the chronological blog post model**. 
+
+That's where Jekyll collections come in - and honestly, they're a game-changer once you understand how to use them properly.
 
 ## What Are Jekyll Posts?
 
