@@ -10,16 +10,41 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <nav style="display: flex; justify-content: space-between; align-items: center;">
+            <!-- Top navigation bar -->
+            <nav class="main-nav">
                 <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-                <div class="site-nav">
+                <div class="nav-links">
                     <a class="page-link" href="{{ '/' | relative_url }}">Home</a>
                     <a class="page-link" href="{{ '/blog/' | relative_url }}">Blog</a>
                     <a class="page-link" href="{{ '/articles/' | relative_url }}">Articles</a>
                     <a class="page-link" href="{{ '/howtos/' | relative_url }}">How-tos</a>
+                    <a class="page-link" href="{{ '/search/' | relative_url }}">Search</a>
                     <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
                 </div>
+                <!-- Mobile menu toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
+            
+            <!-- Search bar section -->
+            <div class="search-section">
+                <div class="search-wrapper">
+                    <div id="search-container" class="search-container">
+                        <div class="search-input-wrapper">
+                            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="search-input" placeholder="Search articles, tutorials, and guides..." autocomplete="off">
+                            <kbd class="search-shortcut">Ctrl+K</kbd>
+                        </div>
+                        <div id="search-results" class="search-results"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -42,5 +67,9 @@
             securityLevel: 'loose'
         });
     </script>
+
+    <!-- Lunr.js for search functionality -->
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
 </body>
 </html>

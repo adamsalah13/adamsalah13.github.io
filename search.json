@@ -1,0 +1,46 @@
+---
+layout: null
+---
+[
+  {% for post in site.posts %}
+    {
+      "title": {{ post.title | jsonify }},
+      "excerpt": {{ post.excerpt | strip_html | strip_newlines | jsonify }},
+      "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+      "url": {{ post.url | relative_url | jsonify }},
+      "date": {{ post.date | date: '%Y-%m-%d' | jsonify }},
+      "category": {{ post.category | jsonify }},
+      "tags": {{ post.tags | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  {% assign has_posts = false %}
+  {% assign has_articles = false %}
+  {% if site.posts.size > 0 %}{% assign has_posts = true %}{% endif %}
+  {% if site.articles.size > 0 %}{% assign has_articles = true %}{% endif %}
+  {% if has_posts == true and has_articles == true %},{% endif %}
+  {% for article in site.articles %}
+    {
+      "title": {{ article.title | jsonify }},
+      "excerpt": {{ article.excerpt | strip_html | strip_newlines | jsonify }},
+      "content": {{ article.content | strip_html | strip_newlines | jsonify }},
+      "url": {{ article.url | relative_url | jsonify }},
+      "date": {{ article.date | date: '%Y-%m-%d' | jsonify }},
+      "category": {{ article.category | jsonify }},
+      "tags": {{ article.tags | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  {% assign has_content = false %}
+  {% if has_posts == true or has_articles == true %}{% assign has_content = true %}{% endif %}
+  {% if has_content == true and site.howtos.size > 0 %},{% endif %}
+  {% for howto in site.howtos %}
+    {
+      "title": {{ howto.title | jsonify }},
+      "excerpt": {{ howto.excerpt | strip_html | strip_newlines | jsonify }},
+      "content": {{ howto.content | strip_html | strip_newlines | jsonify }},
+      "url": {{ howto.url | relative_url | jsonify }},
+      "date": {{ howto.date | date: '%Y-%m-%d' | jsonify }},
+      "category": {{ howto.category | jsonify }},
+      "tags": {{ howto.tags | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
