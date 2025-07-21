@@ -50,6 +50,22 @@ p {
   color: var(--text);
 }
 
+/* Mermaid Diagram Styling */
+.mermaid {
+  margin: 2rem 0;
+  text-align: center;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;

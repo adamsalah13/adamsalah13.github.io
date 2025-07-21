@@ -30,7 +30,7 @@ Before diving into the solution, let's acknowledge what drove this decision:
 
 GitHub offers several compelling advantages as a content platform:
 
-```mermaid
+<div class="mermaid">
 graph TB
     subgraph "Traditional CMS"
         DB[Database]
@@ -61,7 +61,7 @@ graph TB
     ACTIONS --> COLLAB
     PAGES --> FREE
     JEKYLL --> FAST
-```
+</div>
 
 ## The Implementation Journey
 
@@ -136,7 +136,7 @@ This created three distinct content types:
 
 #### Content Discovery Flow
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     A[New .md File Added] --> B{File Location?}
     
@@ -153,7 +153,7 @@ flowchart TD
     H --> I
     
     I --> J[Content Live]
-```
+</div>
 
 ## What to Watch For: Common Pitfalls
 
@@ -209,7 +209,7 @@ gem "github-pages", group: :jekyll_plugins
 
 ### Content Creation Process
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant Writer as Content Creator
     participant Editor as Text Editor
@@ -226,7 +226,7 @@ sequenceDiagram
     GitHub->>Pages: Trigger automatic build
     Pages->>Site: Deploy updated site
     Site-->>Writer: Content live in 5-10 minutes
-```
+</div>
 
 ### Real-World Example
 
